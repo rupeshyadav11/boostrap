@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+}
+.header{
+    background-color: #4c0bce;
+    flex:1;
+    width: 96%;
+    height: 50px;
+    padding: 5px 2%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+}
+.header>.left{
+    display: flex;
+    align-items: center;
+}
+.header>.right{
+    display: flex;
+    align-items: center;
+}
+.left>.logo{
+    color: white;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: 20px;
+}
+.links>a{
+    color:white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.logo>svg{
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.logo>svg:hover{
+    transform: rotate(-10deg) scale(1.1);
+}
+.cover{
+    flex: 1;
+    height: 600px;
+    display: flex;
+    padding: 0% 15%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(to right,#b2d1ff,#fff4d0);
+}
+.badge{
+    background-color: #ffe484;
+    padding:8px 10px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size:16px;
+    border-radius: 10px;
+}
+.cover>.text>p{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.cover>.image{
+    width: 25%;
+    margin-top: 20px;
+}
+.cover>.description{
+    text-align: center;
+}
+.description>h1{
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 0% 5%;
+}
+.description>p{
+    font-size: 26px;
+    font-family:sans-serif;
+    line-height: 40px;
+    font-weight: 200;
+    margin-top: 15px;
+    color:rgb(70, 70, 70);
+}
